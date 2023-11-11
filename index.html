@@ -4,57 +4,157 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revisão Textual - Sua Empresa</title>
+  <title> Revisão Textual - Sua Empresa</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body, h1 { font-family: "Raleway", Arial, sans-serif; }
     h1 { letter-spacing: 6px; font-weight: 600; }
+    h2 { color: #70787B;}
     footer { bottom: 0; width: 100%; background-color: #f1f1f1; }
     .w3-bar a:hover { transition: background-color 0.3s ease; }
+    .revise-image {width: 400px; height: 400px;}
+    .frase-efeito {font-size: 25px;}
     .contact-info { text-align: center; padding: 20px; }
-    .info-steps { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 20px; }
-    .step { text-align: center; width: 300px; margin: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 10px; transition: transform 0.2s; }
-    .step img {max-width: 80px; height: auto; border-bottom: 1px solid #ccc; border-radius: 10px 10px 0 0;}
-    .step p { margin: 10px 0; }
+    .info-steps, .how-it-works-container, .services-container { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 20px; }
+    .step, .how-it-works-step, .service-card, .how-works, .como-funciona { text-align: center; width: 300px; margin: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 10px; transition: transform 0.2s; }
+    .step img, .how-it-works-step img, .service-card img { max-width: 40px; height: auto; border-bottom: 1px solid #ccc; border-radius: 10px 10px 0 0; }
+    .step p, .how-it-works-step p, .service-description { margin: 10px 0; }
     .step a { text-decoration: none; color: white; background-color: #4CAF50; padding: 10px 20px; border-radius: 5px; }
     .step a:hover { background-color: #45a049; }
-    .step:hover { transform: scale(1.05); }
+    .step:hover, .how-it-works-step:hover, .service-card:hover, .how-works:hover { transform: scale(1.05); }
+    .how-it-works-title, .services-title { padding: 20px; text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 30px; }
+    .service-card h3, .service-card .service-description {text-decoration: none; /* Remove o sublinhado */ color: inherit; /* Mantém a cor do texto igual ao resto do conteúdo, não a cor do link */}
+    .services-intro {padding:50px 150px; text-align: center; font-size: 18px; margin-bottom: 40px; color: #444; }
+    .testimonial-container { background-color: #f9f9f9; padding: 40px; display: flex; flex-direction: column; align-items: center; }
+    .testimonial-header { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    .testimonial-content { width: 60%; background: #ffffff; padding: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative; }
+    .testimonial-quote { font-style: italic; font-size: 18px; }
+    .testimonial-author { margin-top: 20px; font-weight: bold; }
+    .testimonial-detail { font-size: 14px; color: #777; }
+    .arrow { width: 40px; height: 40px; background-color: #ddd; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer; }
+    .arrow-left { left: -60px; }
+    .arrow-right { right: -60px; }
+    .start-btn { margin-top: 40px; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s; }
+    .start-btn:hover { background-color: #0056b3; }
   </style>
 </head>
 <body>
-
   <div class="w3-content" style="max-width:1500px">
-    <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-      <h1 class="w3-xlarge">REVISÃO DE TEXTOS</h1>
-      <h1>Sua Empresa</h1>
+    <header class="w3-panel w3-center w3-opacity" style="padding: 25px;px 16px">
+      <img class="revise-image" src="./image/revise aqui logo 2024.png" alt="">
+      <p class="frase-efeito">Ao seu lado em cada passo do caminho na jornada de pesquisa.</p>
+
       <div class="w3-padding-32">
         <div class="w3-bar w3-border">
+          <a href="#" class="w3-bar-item w3-button">Sobre nós</a>
           <a href="#" class="w3-bar-item w3-button">Serviços</a>
           <a href="#" class="w3-bar-item w3-button w3-light-grey">Como funciona?</a>
           <a href="https://wa.me/5527992773767?text=Olá,%20eu%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços" target="_blank" class="w3-bar-item w3-button">Contato</a>
         </div>
       </div>
     </header>
-
-    <div class="info-steps">
-      <div class="step"><img src="./images.png" alt="Cliente Envia Texto"><p>1. O cliente envia o texto</p></div>
-      <div class="step"><img src="./images.png" alt="Análise e Orçamento"><p>2. Analisamos e fazemos o orçamento</p></div>
-      <div class="step"><img src="./images.png" alt="Aprovação do Cliente"><p>3. Aprovação do cliente</p></div>
-      <div class="step"><img src="./images.png" alt="Pagamento"><p>4. Pagamento</p></div>
-      <div class="step"><img src="./images.png" alt="Entrega"><p>5. Entrega</p></div>
+    <div class="services-section">
+        <h2 class="services-title">Serviços que oferecemos</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="./icone revisao.png" alt="Icone revisão textual">
+                <h3>Revisão textual</h3>
+                <div class="service-description">
+				  Revisão acadêmica: correção ortográfica e gramatical, clareza de estilo e adequação formal.            </div>
+            </div>
+            <div class="service-card">
+                <img src="./icone tradução.png" alt="iconetraducao">
+                <h3>Tradução</h3>
+                <div class="service-description">
+                    Traduções precisas do português para o inglês e espanhol, revisadas por nativos em inglês.
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="./icone consultoria.png" alt="icone consultoria">
+                <h3>Consultoria</h3>
+                <div class="service-description">
+                    Assistência especializada em organização, análise de dados e projetos acadêmicos com clareza e conformidade normativa. 
+                </div>
+            </div>
+        </div>
     </div>
+
+   <div class="services-section2" >
+        <h2 class="services-title">Como funciona?</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <a href="https://forms.gle/zG4BUDbG1B66hb3W7" target="_blank" class="w3-hover-opacity">
+                    <img src="./icone upload.png" alt="Ícone revisão textual">
+                </a>
+                <h3>1 Envie seu Texto</h3>
+                <div class="service-description">
+                    Comece por enviar o seu documento através do nosso formulário.
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <img src="./icone formulario orçamento.png" alt="iconetraducao">
+                <h3>2 Escolha o Prazo e Serviço</h3>
+                <div class="service-description">
+                    Selecione o prazo de entrega que melhor se encaixa às suas necessidades e escolha entre nossos serviços de revisão.
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="./icone autorização.png" alt="icone consultoria">
+                <h3>3 Receba a Análise Inicial</h3>
+                <div class="service-description">
+                    Nosso revisor profissional analisará seu texto e solicitará informações adicionais ou esclarecimentos se necessário, para assegurar uma revisão alinhada ao seu objetivo. 
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="./icone conclusao.png" alt="icone consultoria">
+                <h3>4 Obtenha seu Texto Revisado</h3>
+                <div class="service-description">
+                    Após a revisão ser concluída dentro do prazo estabelecido, você receberá o texto revisado com as correções e sugestões aplicadas. Garantimos a confidencialidade e a integridade do seu conteúdo. 
+                </div>
+            </div>
+                
+            
+        </div>
+    </div>
+ <h2 class="services-title">Por que optar pelos nossos serviços de edição?</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="./icone garantia e qualidade.png" alt="icone de garantia de qualidade">
+                <h3>Garantia de Qualidade</h3>
+                <div class="service-description">
+                    Garantimos excelência e rapidez em todos os nossos serviços, com reedição grátis ou reembolso total se o seu manuscrito editado for rejeitado por falhas na qualidade do idioma.
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="./icone pontualidade.png" alt="On-Time Delivery Icon">
+                <h3>Entrega pontual</h3>
+                <div class="service-description">
+                    Nos comprometemos com a pontualidade, assegurando a entrega de todos os pedidos dentro do prazo estipulado e com a qualidade esperada.                </div>
+            </div>
+            <div class="service-card">
+                <img src="./icone confidencialidade.png" alt="Confidentiality Icon">
+                <h3>Confidencialidade</h3>
+                <div class="service-description">
+                    Mantemos uma política de privacidade rigorosa, garantindo confidencialidade total e permitindo que pesquisadores de todo o mundo enviem seus trabalhos para nós com confiança.                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center">
+      <div class="contact-info">
+        <h3>Contato</h3>
+        <p><i class="fa fa-envelope-o"></i> contatoreviseaqui@gmail.com</p>
+        <p><i class="fa fa-phone"></i> +55 27 99277-3767</p>
+      </div>
+      <div class="w3-xlarge w3-section">
+        <a href="#" class="w3-hover-opacity"><i class="fa fa-instagram"></i></a>
+        <a href="https://wa.me/5527992773767?text=Olá,%20eu%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços" target="_blank"" class="w3-hover-opacity"><i class="fa fa-whatsapp"></i></a>
+      </div>
+      <p>Copyright © 2023 by Revise Aqui. All rights reserved.</p>
+    </footer>
   </div>
-
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
-    <div class="contact-info">
-      <p>Para mais informações, entre em contato conosco:</p>
-      <p>Email: contatoreviseaqui@gmail.com | Telefone: (27) 99277-3767</p>
-    </div>
-       <a href="https://www.instagram.com/revise__aqui/" class="fa fa-instagram w3-hover-opacity" aria-hidden="true"></a>
-    <p>Desenvolvido com <a href="https://codelsa.github.io/" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  </footer>
-
 </body>
 </html>
